@@ -17,12 +17,13 @@ void changeObject(void* lista,int i,void* newValorLista){
 }
 
 int f_condition(void* valorA,void* valorB){
-    return (int)valorA > (int)valorB;
+    return (int)valorA < (int)valorB;
 }
 
 int main(){
+    Bolha *bolha = creat_metode(change,f_walk,changeObject,f_condition);
     int lista[6] = {10,1,12,30,11,0};
-    sort(lista,6,change,f_walk,changeObject,f_condition);
+    sort(bolha,lista,6);
     for(int i = 0;i<6;i++){
         printf("%d ",lista[i]);
     }
