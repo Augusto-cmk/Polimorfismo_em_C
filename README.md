@@ -17,7 +17,7 @@ typedef struct {
     void *data;
     size_t size;
 } GenericStruct;
-
+```
 
 Nessa estrutura genérica, data é um ponteiro para void que pode ser convertido em um ponteiro para qualquer tipo de dado e size é o tamanho em bytes do dado armazenado em data.
 
@@ -39,7 +39,7 @@ int main() {
     
     return 0;
 }
-
+```
 Nesse exemplo, duas estruturas genéricas são criadas para armazenar um inteiro e um caractere. O ponteiro para void em cada estrutura é convertido em um ponteiro para o tipo de dado apropriado e o valor é impresso na tela.
 
 ### Aplicações
